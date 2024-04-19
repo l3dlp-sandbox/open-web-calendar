@@ -51,6 +51,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://open-web-calendar.quelltext.eu/dev/license/</loc>
+         <lastmod>2024-04-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://open-web-calendar.quelltext.eu/dev/maintain/</loc>
          <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
