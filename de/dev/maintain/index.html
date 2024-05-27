@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Embed a highly customizable web calendar into your website using ICal source links">
+        <meta name="description" content="Füge einen hoch-anpassbaren Webkalender in Deine Webseite ein, auf der Basis von ICS-Links">
       
       
       
@@ -23,7 +23,7 @@
     
     
       
-        <title>Notes for Maintainers - Open Web Calendar</title>
+        <title>Notes for Maintainers - Offener Web-Kalender</title>
       
     
     
@@ -62,7 +62,7 @@
       
         <meta  property="og:description"  content="Embed a highly customizable web calendar into your website using ICal source links" >
       
-        <meta  property="og:image"  content="/home/runner/work/open-web-calendar/open-web-calendar/.tox/docs/tmp/mkdocs_mdpo_bohxb3s8/de/dev/maintain/index.png" >
+        <meta  property="og:image"  content="/home/runner/work/open-web-calendar/open-web-calendar/.tox/docs/tmp/mkdocs_mdpo_df605t4v/de/dev/maintain/index.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -78,7 +78,7 @@
       
         <meta  name="twitter:description"  content="Embed a highly customizable web calendar into your website using ICal source links" >
       
-        <meta  name="twitter:image"  content="/home/runner/work/open-web-calendar/open-web-calendar/.tox/docs/tmp/mkdocs_mdpo_bohxb3s8/de/dev/maintain/index.png" >
+        <meta  name="twitter:image"  content="/home/runner/work/open-web-calendar/open-web-calendar/.tox/docs/tmp/mkdocs_mdpo_df605t4v/de/dev/maintain/index.png" >
       
     
     
@@ -166,6 +166,18 @@
             </a>
           </li>
         
+          <li class="md-select__item">
+            <a href="../../../es" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../nb_NO" hreflang="nb_NO" class="md-select__link">
+              Norsk bokmål
+            </a>
+          </li>
+        
       </ul>
     </div>
   </div>
@@ -243,7 +255,7 @@
         
   
   <span class="md-ellipsis">
-    Getting Started
+    Anfang
   </span>
   
 
@@ -263,7 +275,7 @@
         
   
   <span class="md-ellipsis">
-    Examples
+    Beispiele
   </span>
   
 
@@ -283,7 +295,7 @@
         
   
   <span class="md-ellipsis">
-    Contributing ♥️
+    Contribute ♥️
   </span>
   
 
@@ -326,6 +338,27 @@
             News
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../news/social-media/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Social Media News
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -494,6 +527,27 @@
             Development
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../translate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Translate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -722,9 +776,9 @@
   
 
 
-<h1 id="notes-for-maintainers">Notes for Maintainers<a class="headerlink" href="#notes-for-maintainers" title="Permanent link">&para;</a></h1>
+<h1 id="notes-for-maintainers">Notes for Maintainers<a class="headerlink" href="#notes-for-maintainers" title="Fester Link">&para;</a></h1>
 <p>This section clarifies how to maintain the project.</p>
-<h2 id="update-dependencies">Update Dependencies<a class="headerlink" href="#update-dependencies" title="Permanent link">&para;</a></h2>
+<h2 id="update-dependencies">Update Dependencies<a class="headerlink" href="#update-dependencies" title="Fester Link">&para;</a></h2>
 <ol>
 <li>Enter your virtual environment. E.g.
    <div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>.tox/py311/bin/activate
@@ -747,7 +801,7 @@ git commit -m"Update dependencies"
 git push -u origin update</code></li>
 <li>Create a Pull Request and see if the tests run.</li>
 </ol>
-<h2 id="release-a-new-version">Release a new Version<a class="headerlink" href="#release-a-new-version" title="Permanent link">&para;</a></h2>
+<h2 id="release-a-new-version">Release a new Version<a class="headerlink" href="#release-a-new-version" title="Fester Link">&para;</a></h2>
 <p>To release a new version:</p>
 <ol>
 <li>Edit the <code>docs/changelog.md</code> file in the Changelog Section and add the changes.
@@ -759,24 +813,39 @@ git commit -m"log changes"</code></li>
    git tag v1.30
 git push origin v1.30</code></li>
 </ol>
-<h2 id="translate-documentation-files">Translate Documentation Files<a class="headerlink" href="#translate-documentation-files" title="Permanent link">&para;</a></h2>
+<h2 id="translate-documentation-files">Translate Documentation Files<a class="headerlink" href="#translate-documentation-files" title="Fester Link">&para;</a></h2>
 <p>We might add more Markdown documentation files to the <a href="https://hosted.weblate.org/engage/open-web-calendar/">Weblate translation</a>. The aim of this section is to have a consistent outcome.</p>
 <ol>
 <li>Create a component <strong>From existing component</strong>, the <code>index.html</code>.</li>
 </ol>
 <ul>
-<li>Use the page title as <strong>title</strong> like <code>Documentation - Getting Started</code></li>
+<li>Use the page title as <strong>title</strong> like <code>Documentation - 00 - Getting Started</code></li>
 <li>Use file name as <strong>slug</strong> like <code>documentation-index</code></li>
 </ul>
 <ol>
-<li>Choose the right <code>gettext PO file (monolingual)</code>.</li>
-<li>Set the <strong>Repository browser</strong> to the right URL, replace <code>index.md</code>: <code>https://github.com/niccokunzmann/open-web-calendar/blob/{{ branch }}/docs/index.md?plain=1#L{{ line }}</code></li>
-<li>For <strong>Translation license</strong> choose <code>Create Commons Attribution Share Alike 4.0 International</code>.</li>
+<li>Choose the right File settings:</li>
+</ol>
+<ul>
+<li>File format: <code>gettext PO file</code> - <strong>bi</strong>lingual</li>
+<li>Repository browser: <code>https://github.com/niccokunzmann/open-web-calendar/blob/{{ branch }}/docs/&lt;file&gt;?plain=1#L{{ line }}</code> - replace <code>&lt;file&gt;</code></li>
+<li>File mask: <code>translations/*/LC_MESSAGES/&lt;file&gt;.md.po</code> - replace <code>&lt;file&gt;</code></li>
+<li>Monolingual base language file: empty</li>
+<li>Edit base file: <strong>not</strong> checked</li>
+<li>Intermediate language file: empty</li>
+<li>Adding new translation: <code>Create new language file</code></li>
+<li>Template for new translations: <code>translations/en/LC_MESSAGES/&lt;file&gt;.md.po</code> - replace <code>&lt;file&gt;</code></li>
+<li>Translation license: <code>Create Commons Attribution Share Alike 4.0 International</code></li>
+<li>Language code style: <code>Default based on the file format</code></li>
+<li>Language filter: <code>^(?!(en)$)[^.]+$</code> - excludes <code>en</code></li>
+<li>Source language: <code>English</code></li>
+<li>Manage strings: <strong>not</strong> checked</li>
+</ul>
+<ol>
 <li>Save.</li>
 <li>Add <strong>Flags</strong>, example link: https://hosted.weblate.org/settings/open-web-calendar/documentation-index/#translation</li>
 </ol>
 <ul>
-<li>add <code>md-text,safe-html</code> as <strong>Translation flags</strong></li>
+<li>add <code>md-text,safe-html,xml-text</code> as <strong>Translation flags</strong></li>
 <li>
 <p>choose <strong>Enforced checks</strong>:</p>
 <ul>
@@ -784,6 +853,8 @@ git push origin v1.30</code></li>
 <li>Markdown references</li>
 <li>Markdown syntax</li>
 <li>Unsafe HTML</li>
+<li>XML markup</li>
+<li>XML syntax</li>
 </ul>
 </li>
 </ul>
@@ -798,14 +869,18 @@ git push origin v1.30</code></li>
 <li>Add all strings to it</li>
 </ul>
 <ol>
-<li>Clear any component alerts.</li>
+<li>Go to the <strong>Manage</strong> -&gt; <strong>Add-ons</strong> and add:</li>
 </ol>
-<p>These component Add-Ons are automatically installed: (<a href="https://hosted.weblate.org/addons/open-web-calendar/">Page</a>)</p>
 <ul>
+<li>Add missing languages</li>
 <li>Cleanup translation files</li>
 <li>Contributors in comment</li>
-<li>Add missing languages</li>
 </ul>
+<p>These component Add-Ons are installed project-wide but need activation, too.</p>
+<ol>
+<li>Clear any component alerts.</li>
+<li>Skip through all the strings. If some strings are not for translation, add the flag <code>read-only</code>.</li>
+</ol>
 
 
 

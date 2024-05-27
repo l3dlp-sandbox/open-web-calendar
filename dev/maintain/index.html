@@ -170,6 +170,18 @@
             </a>
           </li>
         
+          <li class="md-select__item">
+            <a href="../../es" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../nb_NO" hreflang="nb_NO" class="md-select__link">
+              Norsk bokmål
+            </a>
+          </li>
+        
       </ul>
     </div>
   </div>
@@ -287,7 +299,7 @@
         
   
   <span class="md-ellipsis">
-    Contributing ♥️
+    Contribute ♥️
   </span>
   
 
@@ -330,6 +342,27 @@
             News
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../news/social-media/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Social Media News
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -500,6 +533,27 @@
             Development
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../translate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Translate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -853,22 +907,33 @@ The aim of this section is to have a consistent outcome.</p>
 <li>
 <p>Create a component <strong>From existing component</strong>, the <code>index.html</code>.</p>
 <ul>
-<li>Use the page title as <strong>title</strong> like <code>Documentation - Getting Started</code></li>
+<li>Use the page title as <strong>title</strong> like <code>Documentation - 00 - Getting Started</code></li>
 <li>Use file name as <strong>slug</strong> like <code>documentation-index</code></li>
 </ul>
 </li>
 <li>
-<p>Choose the right <code>gettext PO file (monolingual)</code>.</p>
-</li>
-<li>Set the <strong>Repository browser</strong> to the right URL, replace <code>index.md</code>: <code>https://github.com/niccokunzmann/open-web-calendar/blob/{{ branch }}/docs/index.md?plain=1#L{{ line }}</code></li>
-<li>For <strong>Translation license</strong> choose <code>Create Commons Attribution Share Alike 4.0 International</code>.</li>
-<li>
-<p>Save.</p>
+<p>Choose the right File settings:</p>
+<ul>
+<li>File format: <code>gettext PO file</code> - <strong>bi</strong>lingual</li>
+<li>Repository browser: <code>https://github.com/niccokunzmann/open-web-calendar/blob/{{ branch }}/docs/&lt;file&gt;?plain=1#L{{ line }}</code> - replace <code>&lt;file&gt;</code></li>
+<li>File mask: <code>translations/*/LC_MESSAGES/&lt;file&gt;.md.po</code> - replace <code>&lt;file&gt;</code></li>
+<li>Monolingual base language file: empty</li>
+<li>Edit base file: <strong>not</strong> checked</li>
+<li>Intermediate language file: empty</li>
+<li>Adding new translation: <code>Create new language file</code></li>
+<li>Template for new translations: <code>translations/en/LC_MESSAGES/&lt;file&gt;.md.po</code> - replace <code>&lt;file&gt;</code></li>
+<li>Translation license: <code>Create Commons Attribution Share Alike 4.0 International</code></li>
+<li>Language code style: <code>Default based on the file format</code></li>
+<li>Language filter: <code>^(?!(en)$)[^.]+$</code> - excludes <code>en</code></li>
+<li>Source language: <code>English</code></li>
+<li>Manage strings: <strong>not</strong> checked
+3. Save.</li>
+</ul>
 </li>
 <li>
 <p>Add <strong>Flags</strong>, example link: https://hosted.weblate.org/settings/open-web-calendar/documentation-index/#translation</p>
 <ul>
-<li>add <code>md-text,safe-html</code> as <strong>Translation flags</strong></li>
+<li>add <code>md-text,safe-html,xml-text</code> as <strong>Translation flags</strong></li>
 <li>
 <p>choose <strong>Enforced checks</strong>:</p>
 <ul>
@@ -876,6 +941,8 @@ The aim of this section is to have a consistent outcome.</p>
 <li>Markdown references</li>
 <li>Markdown syntax</li>
 <li>Unsafe HTML</li>
+<li>XML markup</li>
+<li>XML syntax</li>
 </ul>
 </li>
 </ul>
@@ -895,15 +962,20 @@ The aim of this section is to have a consistent outcome.</p>
 </ul>
 </li>
 <li>
-<p>Clear any component alerts.</p>
-</li>
-</ol>
-<p>These component Add-Ons are automatically installed: (<a href="https://hosted.weblate.org/addons/open-web-calendar/">Page</a>)</p>
+<p>Go to the <strong>Manage</strong> -&gt; <strong>Add-ons</strong> and add:</p>
 <ul>
+<li>Add missing languages</li>
 <li>Cleanup translation files</li>
 <li>Contributors in comment</li>
-<li>Add missing languages</li>
 </ul>
+<p>These component Add-Ons are installed project-wide but need activation, too.</p>
+</li>
+<li>
+<p>Clear any component alerts.</p>
+</li>
+<li>Skip through all the strings. If some strings are not for translation,
+    add the flag <code>read-only</code>.</li>
+</ol>
 
 
 
