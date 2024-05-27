@@ -67,6 +67,12 @@
          <xhtml:link rel="alternate" hreflang="en" href="https://open-web-calendar.quelltext.eu/en/dev/translate/"/><xhtml:link rel="alternate" hreflang="de" href="https://open-web-calendar.quelltext.eu/de/dev/translate/"/><xhtml:link rel="alternate" hreflang="es" href="https://open-web-calendar.quelltext.eu/es/dev/translate/"/><xhtml:link rel="alternate" hreflang="nb_NO" href="https://open-web-calendar.quelltext.eu/nb_NO/dev/translate/"/>
     </url>
     <url>
+         <loc>https://open-web-calendar.quelltext.eu/host/configure/</loc>
+         <lastmod>2024-05-27</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://open-web-calendar.quelltext.eu/en/host/configure/"/><xhtml:link rel="alternate" hreflang="de" href="https://open-web-calendar.quelltext.eu/de/host/configure/"/><xhtml:link rel="alternate" hreflang="es" href="https://open-web-calendar.quelltext.eu/es/host/configure/"/><xhtml:link rel="alternate" hreflang="nb_NO" href="https://open-web-calendar.quelltext.eu/nb_NO/host/configure/"/>
+    </url>
+    <url>
          <loc>https://open-web-calendar.quelltext.eu/host/docker/</loc>
          <lastmod>2024-05-27</lastmod>
          <changefreq>daily</changefreq>
